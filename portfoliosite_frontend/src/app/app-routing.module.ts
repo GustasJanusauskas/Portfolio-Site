@@ -5,8 +5,9 @@ import { LandingComponent } from './landing/landing.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-    { path: '', component: LandingComponent, pathMatch: 'full' },
-    { path: '**', component: PagenotfoundComponent }
+    { path: '', component: LandingComponent },
+    { path: 'notfound', component: PagenotfoundComponent },
+    { path: '**', redirectTo: '/notfound' },
 ];
 
 

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+@keyframes bottomUpFade {
+    0% {
+        opacity: 0%;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 100%;
+        transform: none;
+    }
+}
+
+.landingPage {
+
+}
+
+.introContent {
+    background-image: url('images/background.svg');
+    background-size: cover;
+    background-color: #212529;
+
+    padding-top: 15%;
+    padding-bottom: 15%;
+
+    color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#landingName {
+    font-size: 4em;
+    animation-name: bottomUpFade;
+    animation-duration: 1s;
+}
+
+#landingSubtitle {
+    font-size: 2em;
+
+    opacity: 0%;
+    animation-name: bottomUpFade;
+    animation-duration: 1s;
+    animation-delay: .75s;
+    animation-fill-mode: forwards;
+}
