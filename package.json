@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "server/index.js",
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "express": "^4.18.2"
   },
-  "devDependencies": {},
   "scripts": {
-	"compilerun": "cd portfoliosite_frontend && ng build && cd .. && npm start",
+    "compilerun": "cd portfoliosite_frontend && ng build && cd .. && npm start",
     "dev": "cd portfoliosite_frontend && npm start",
     "start": "node server/index.js"
   },
