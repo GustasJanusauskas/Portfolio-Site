@@ -11,20 +11,26 @@
     }
 }
 
-.landingPage {
+.headshot {
+    display: block;
+    margin: auto;
+    width: 66%;
 
+    border-radius: 50%;
+}
+
+.aboutSection {
+    border-top: 2px solid var(--accent-colour);
+    padding: 5em 0 5em 0;
 }
 
 .introContent {
     background-image: url('images/background.svg');
     background-size: cover;
-    background-color: #212529;
+    background-color: var(--navbar-colour);
 
     padding-top: 15%;
-    padding-bottom: 15%;
-
-    color: whitesmoke;
-    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 20%;
 }
 
 #landingName {

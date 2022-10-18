@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --text-colour: white;
+    --navbar-colour: #212529;
+    --accent-colour: #53a5df;
+    --accent-colour-light: #a9d2ef;
+
+    --bg-colour: #4e4e4e;
+}
+
+body {
+    background-color: var(--bg-colour); 
+    /*background: linear-gradient(45deg, rgba(88,81,87,1) 0%, rgba(35,69,85,1) 100%);*/
+
+    color: var(--text-colour);
+    font-family: 'Quicksand', sans-serif;
+}
