@@ -8,8 +8,7 @@
 }
 
 body {
-    background-color: var(--bg-colour); 
-    /*background: linear-gradient(45deg, rgba(88,81,87,1) 0%, rgba(35,69,85,1) 100%);*/
+    background-color: var(--bg-colour);
 
     color: var(--text-colour);
     font-family: 'Quicksand', sans-serif;

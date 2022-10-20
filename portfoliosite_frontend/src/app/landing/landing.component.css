@@ -21,7 +21,13 @@
 
 .aboutSection {
     border-top: 2px solid var(--accent-colour);
-    padding: 5em 0 5em 0;
+    padding: 5rem 0 5rem 0;
+
+    background: linear-gradient(0deg, rgba(78,78,78,1) 0%, rgba(83,165,223,0.5) 100%);
+}
+
+.projectsSection {
+    text-align: center;
 }
 
 .introContent {
@@ -30,21 +36,31 @@
     background-color: var(--navbar-colour);
 
     padding-top: 15%;
-    padding-bottom: 20%;
+    padding-bottom: calc(28% - 6.5rem);
 }
 
 #landingName {
-    font-size: 4em;
+    font-size: 3rem;
     animation-name: bottomUpFade;
     animation-duration: 1s;
 }
 
 #landingSubtitle {
-    font-size: 2em;
+    font-size: 2rem;
 
     opacity: 0%;
     animation-name: bottomUpFade;
     animation-duration: 1s;
     animation-delay: .75s;
     animation-fill-mode: forwards;
+}
+
+@media only screen and (min-width: 975px) {
+    #landingName {
+        font-size: 4rem;
+    }
+
+    #landingSubtitle {
+        font-size: 2rem;
+    }
 }
