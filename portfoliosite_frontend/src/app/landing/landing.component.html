@@ -24,23 +24,53 @@
     </div>
     <div class="col-sm">
         <h1>About me</h1>
-        <p>
+        <p class="aboutText">
             Hello! I am a web developer focusing on front-end development. I most frequently work with Angular, Bootstrap, NodeJS, PostgreSQL and Git. I am also proficient in full-stack development.
             <br><br>
             I am currently a second-year Information Systems student at Vilniaus Kolegija/University of Applied Sciences.
             <br><br>
-            Lately I've been learning more about Bootstrap, Angular modules and experimenting with the .NET ecosystem. When I'm not programming or studying I enjoy spending time with friends, training, and hiking.
+            Lately I've been learning more about Bootstrap, Angular modules and experimenting with the .NET ecosystem. When I'm not programming or studying I enjoy spending time with friends, weightlifting, and hiking.
         </p>
     </div>
 </div>
 </div>
 </div>
 
-<div class="projectsSection">
-    <h1>Personal Projects</h1>
-    <div>
-        
+<div class="container">
+<div id="projectsSection">
+    <h1>Projects I've worked on</h1>
+    <br>
+    <div class="projectsInner row">
+        <div class="projectDiv col-md-6" *ngFor="let project of projects">
+            <div [id]="'carousel' + project.id" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item" *ngFor="let image of project.images" [ngClass]="project.images.indexOf(image) == 0 ? 'active' : ''">
+                        <img [src]="image.path" class="d-block projectImage">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>{{image.caption}}</p>
+                        </div>                    
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carousel' + project.id" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carousel' + project.id" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>                
+            </div>
+            <br><br>
+            <div class="projectDetails">
+                <h2 class="projectTitle">{{project.title}}</h2>
+                <p class="projectDescription">{{project.description}}</p>
+                <sub class="projectTools">{{project.tools}}</sub><br><br>
+                <a class="btn btn-primary text-white" [href]="project.link" target="_blank">View code</a>
+            </div>
+            <br><br>
+        </div>
     </div>
+</div>
 </div>
 
 </div>

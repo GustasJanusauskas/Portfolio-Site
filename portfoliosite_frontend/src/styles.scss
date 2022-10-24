@@ -1,3 +1,8 @@
+$primary: #53a5df;
+$secondary: #a9d2ef;
+
+@import "bootstrap";
+
 :root {
     --text-colour: white;
     --navbar-colour: #212529;
@@ -5,6 +10,7 @@
     --accent-colour-light: #a9d2ef;
 
     --bg-colour: #4e4e4e;
+    --bg-accent-colour: #686868;
 }
 
 body {
@@ -12,4 +18,10 @@ body {
 
     color: var(--text-colour);
     font-family: 'Quicksand', sans-serif;
+}
+
+// Preload images
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
+    content:url('../images/background.svg');   // load images
 }
