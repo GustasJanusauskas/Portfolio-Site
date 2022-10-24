@@ -19,7 +19,11 @@
     border-radius: 50%;
 }
 
-.aboutSection {
+#contactSection {
+    text-align: center;
+}
+
+#aboutSection {
     border-top: 2px solid var(--accent-colour);
     padding: 5rem 0 5rem 0;
 
@@ -30,7 +34,7 @@
     font-size: 1.25rem;
 }
 
-.introContent {
+#introContent {
     background-image: url('images/background.svg');
     background-size: cover;
     background-color: var(--navbar-colour);
@@ -82,6 +86,15 @@
     animation-duration: 1s;
     animation-delay: .75s;
     animation-fill-mode: forwards;
+}
+
+.scrollUpArrow {
+    width: 4rem;
+    opacity: 0.75;
+}
+
+.scrollUpArrow:hover {
+    opacity: 1;
 }
 
 @media only screen and (min-width: 975px) {
