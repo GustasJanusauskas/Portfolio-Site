@@ -17,10 +17,6 @@
     border-radius: 50%;
 }
 
-#contactSection {
-    text-align: center;
-}
-
 #aboutSection {
     border-top: 2px solid var(--accent-colour);
     padding: 5rem 0 5rem 0;
