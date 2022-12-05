@@ -2,6 +2,7 @@ $primary: #53a5df;
 $secondary: #a9d2ef;
 
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 :root {
     --text-colour: white;
@@ -22,10 +23,4 @@ body {
 
     color: var(--text-colour);
     font-family: 'Quicksand', sans-serif;
-}
-
-// Preload images
-body::after{
-    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
-    content:url('../images/background.svg');   // load images
 }

@@ -9,4 +9,5 @@ export interface Project {
     link: string;
 
     images:Image[];
+    carouselSpeed?:number;
 }

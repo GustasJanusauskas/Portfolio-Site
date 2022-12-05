@@ -1,0 +1,20 @@
+#notfoundContent {
+    background-image: url('images/background.svg');
+    background-size: cover;
+    background-color: var(--navbar-colour);
+
+    padding-top: 15%;
+    height: calc(100vh - 4rem);
+}
+
+#notfoundName {
+    font-size: 3rem;
+}
+
+#notfoundSubtitle {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}

@@ -21,6 +21,7 @@
 <div class="row flex-lg-row">
     <div class="col-sm">
         <img src="assets/headshot.jpg" class="headshot">
+        <br><br>
     </div>
     <div class="col-sm">
         <h1>About me</h1>
@@ -44,7 +45,7 @@
         <div class="projectDiv col-md-6" *ngFor="let project of projects">
             <div [id]="'carousel' + project.id" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item" *ngFor="let image of project.images" data-bs-interval="5000" [ngClass]="project.images.indexOf(image) == 0 ? 'active' : ''">
+                    <div class="carousel-item" *ngFor="let image of project.images" [attr.data-bs-interval]="project.carouselSpeed" [ngClass]="project.images.indexOf(image) == 0 ? 'active' : ''">
                         <img [src]="image.path" class="d-block projectImage">
                         <div class="carousel-caption d-none d-md-block">
                             <p>{{image.caption}}</p>
@@ -65,7 +66,7 @@
                 <h2 class="projectTitle">{{project.title}}</h2>
                 <p class="projectDescription">{{project.description}}</p>
                 <sub class="projectTools">{{project.tools}}</sub><br><br>
-                <a class="btn btn-primary text-white" [href]="project.link" target="_blank">View code</a>
+                <a class="btn btn-primary text-white" [href]="project.link" target="_blank" *ngIf="project.link">View code</a>
             </div>
             <br><br>
         </div>

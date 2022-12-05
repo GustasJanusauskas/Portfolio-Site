@@ -15,7 +15,9 @@ export class LandingComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    for (let index = 0; index < this.projects.length; index++) {
+      this.projects[index].carouselSpeed = 4000 + Math.random() * 4000;
+    }
   }
 
 }

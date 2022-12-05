@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-
 @keyframes bottomUpFade {
     0% {
         opacity: 0%;
@@ -39,8 +37,9 @@
     background-size: cover;
     background-color: var(--navbar-colour);
 
-    padding-top: 15%;
-    padding-bottom: calc(28% - 6.5rem);
+    padding-top: 33.33vh;
+    padding-bottom: 33.33vh;
+    height: calc(100vh - 4rem);
 }
 
 /* Projects */
@@ -91,10 +90,12 @@
 .scrollUpArrow {
     width: 4rem;
     opacity: 0.75;
+    transition: ease-in-out 0.175s;
 }
 
 .scrollUpArrow:hover {
     opacity: 1;
+    transition: ease-in-out 0.175s;
 }
 
 @media only screen and (min-width: 975px) {

@@ -1,3 +1,21 @@
 .iconImage {
     width: 2rem;
 }
+
+.saturateOnHover {
+    transition: ease-in-out 0.15s;
+}
+
+.saturateOnHover:hover {
+    filter: saturate(500%);
+    transition: ease-in-out 0.15s;
+}
+
+#mainToolbarIcon:hover {
+    transform: rotate(0.5turn);
+    transition: ease-in-out 0.5s;
+}
+
+#mainToolbarIcon {
+    transition: ease-in-out 0.5s;
+}
