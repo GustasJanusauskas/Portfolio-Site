@@ -83,6 +83,25 @@
     animation-fill-mode: forwards;
 }
 
+/* Contacts */
+
+.contactForm {
+    background-color: var(--bg-accent-colour);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.contactLink {
+    text-decoration: none;
+    color: var(--accent-colour);
+    transition: ease-in-out 0.2s;
+}
+
+.contactLink:hover {
+    color: var(--accent-colour-light);
+    transition: ease-in-out 0.2s;
+}
+
 .scrollUpArrow {
     width: 4rem;
     opacity: 0.75;
