@@ -94,6 +94,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+		  "options": {
+			"baseHref": "https://gustasjanusauskas.github.io/Portfolio-Site/",
+			"name": "Gustas Janusauskas",
+			"email": "gustasjanusauskas@gmail.com"
+		  }
         }
       }
     }

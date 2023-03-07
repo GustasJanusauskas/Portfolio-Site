@@ -9,7 +9,8 @@
   "scripts": {
     "compilerun": "cd portfoliosite_frontend && ng build && cd .. && npm start",
     "dev": "cd portfoliosite_frontend && npm start",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+	"deploy": "cd portfoliosite_frontend && ng deploy"
   },
   "repository": {
     "type": "git",
