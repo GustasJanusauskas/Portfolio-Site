@@ -1,0 +1,27 @@
+/* Spinning pyramid, based on https://x.st/spinning-diagrams-with-css/ */
+
+@keyframes spinObject {
+    0% { transform: rotateX(-0.1turn) rotateY(0turn); }
+    100% { transform: rotateX(-0.1turn) rotateY(1turn); }
+}
+
+@keyframes reverseSpin {
+    from { transform: rotateY(0turn); }
+    to { transform: rotateY(-1turn); }
+}
+
+#pyramid {
+    position: relative;
+
+    transform-style: preserve-3d;
+    animation: spinObject 15s linear infinite;
+}
+
+#pyramid > div {
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+#pyramid > div > img {
+    animation: reverseSpin 15s linear infinite;
+}

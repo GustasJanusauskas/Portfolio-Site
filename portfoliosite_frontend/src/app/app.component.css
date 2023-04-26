@@ -8,6 +8,7 @@
 
 .saturateOnHover:hover {
     filter: saturate(500%);
+
     transition: ease-in-out 0.15s;
 }
 

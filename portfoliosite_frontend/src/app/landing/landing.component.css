@@ -93,6 +93,8 @@
 
 .contactLink {
     text-decoration: none;
+    overflow-wrap: break-word;
+
     color: var(--accent-colour);
     transition: ease-in-out 0.2s;
 }
