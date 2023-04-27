@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SpinningobjectComponent implements OnInit {
   @Input() image:string = 'assets/icon.png';
+  @Input() imageBot:string = 'assets/icon_flipped.png';
   @Input() size:number = 4;
   @Input() cornerSize: number = 1;
 
