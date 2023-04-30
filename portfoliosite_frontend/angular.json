@@ -98,7 +98,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
 		  "options": {
-			"baseHref": "https://gustasjanusauskas.github.io/Portfolio-Site/",
+			"baseHref": "https://gustasjanusauskas.com",
 			"name": "Gustas Janusauskas",
 			"email": "gustasjanusauskas@gmail.com"
 		  }
