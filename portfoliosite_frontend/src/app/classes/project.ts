@@ -6,7 +6,9 @@ export interface Project {
     title: string;
     description: string;
     tools: string;
+
     link: string;
+    projectType?: string;
 
     images:Image[];
     carouselSpeed?:number;

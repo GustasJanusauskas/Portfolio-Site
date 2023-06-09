@@ -29,9 +29,9 @@
         <p class="aboutText">
             Hello! I am a software developer currently focusing on front-end development. I most frequently work with Angular, Bootstrap, NodeJS, PostgreSQL and Git. I am also proficient in full-stack development.
             <br><br>
-            I am currently a second-year Information Systems student at Vilniaus Kolegija/University of Applied Sciences.
+            I am currently a second-year Information Systems student at Vilniaus Kolegija/University of Applied Sciences. I also self-study software development and am quick to pick up new concepts.
             <br><br>
-            Lately I've been learning more about Bootstrap, .NET and practising unit testing. When I'm not programming or studying I enjoy spending time with friends, weightlifting, and hiking.
+            Lately I've been learning more about the Android SDK, Kotlin and practising unit testing. When I'm not programming or studying I enjoy spending time with friends, composing music, weightlifting, and hiking.
         </p>
     </div>
 </div>
@@ -67,7 +67,7 @@
                 <h2 class="projectTitle">{{project.title}}</h2>
                 <p class="projectDescription">{{project.description}}</p>
                 <sub class="projectTools">{{project.tools}}</sub><br><br>
-                <a class="btn btn-primary text-white" [href]="project.link" target="_blank" *ngIf="project.link">View code</a>
+                <a class="btn btn-primary text-white" [href]="project.link" target="_blank" *ngIf="project.link">{{project.projectType ? 'View ' + project.projectType : 'View code'}}</a>
             </div>
             <br><br>
         </div>

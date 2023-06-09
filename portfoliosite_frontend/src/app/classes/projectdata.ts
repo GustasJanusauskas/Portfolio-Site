@@ -26,6 +26,35 @@ export const PROJECT_DATA: Project[] = [
     },
     {
         id:2,
+        title:'Futuristic Cityscape Environment',
+        description:'Modeled a large, open 3D environment, set inside of a futuristic metropolis, viewed on the Steam Workshop by over 50 thousand people.\n\nEnvironment features skyscrapers with interiors, metro stations, malls, parks and tunnels. Development time ~3 years, rendered using the Source Engine.',
+        images:[
+            {path:'assets/project_contrast_1.jpg'},
+            {path:'assets/project_contrast_2.jpg'},
+            {path:'assets/project_contrast_3.jpg'},
+            {path:'assets/project_contrast_4.jpg'},
+            {path:'assets/project_contrast_5.jpg'}
+        ],
+        tools:'Source Engine • Hammer Editor',
+        link:'https://steamcommunity.com/sharedfiles/filedetails/?id=2466651013',
+        projectType:'Environment'
+    },
+    {
+        id:3,
+        title:'Platformer Video Game',
+        description:'Developed a sidescrolling platformer web game using Unity Engine, making use of the 2D workflow and lighting system. Drew the graphics and composed the soundtrack.',
+        images:[
+            {path:'assets/project_platformer_1.jpg'},
+            {path:'assets/project_platformer_2.jpg'},
+            {path:'assets/project_platformer_3.jpg'},
+            {path:'assets/project_platformer_4.jpg'}
+        ],
+        tools:'Unity Engine',
+        link:'https://verytacticals.itch.io/volcano-spelunker',
+        projectType:'Game'
+    },
+    {
+        id:4,
         title:'Library Catalogue Web-Application',
         description:'A fictional library book catalogue, with account, borrowing and reserving functionality, as well as an in-depth search-filtering system and a dedicated admin panel.',
         images:[
@@ -37,7 +66,7 @@ export const PROJECT_DATA: Project[] = [
         link:'https://github.com/GustasJanusauskas/Book-Catalog-Service'
     },
     {
-        id:3,
+        id:5,
         title:'Portfolio Website',
         description:'A modern, responsive and easily expandable portfolio website, built using Angular and Bootstrap. Site dynamically changes personal project list, using an easily human-readable and modifiable data file.',
         images:[
@@ -46,5 +75,5 @@ export const PROJECT_DATA: Project[] = [
         ],
         tools:'Angular • Bootstrap',
         link:'https://github.com/GustasJanusauskas/Portfolio-Site'
-    },
+    }
 ];
