@@ -9,7 +9,7 @@ Portfolio site with an easily modifiable list of projects, optimised for static 
 ### Steps
 
 1. Install prerequisites.
-2. Navigate to both the root and socialmediasite_frontend folders and run:
+2. Navigate to both the root and portfoliosite_frontend folders and run:
 ```
 npm install
 ```
