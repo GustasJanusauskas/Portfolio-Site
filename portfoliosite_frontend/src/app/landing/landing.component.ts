@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../classes/project';
+import { Experience } from "../classes/experience";
 import { PROJECT_DATA } from '../classes/projectdata';
+import { EXPERIENCE_DATA } from "../classes/experiencedata";
 
 @Component({
   selector: 'app-landing',
@@ -9,6 +11,7 @@ import { PROJECT_DATA } from '../classes/projectdata';
 })
 export class LandingComponent implements OnInit {
   projects: Project[] = PROJECT_DATA;
+  experiences: Experience[] = EXPERIENCE_DATA;
 
   constructor() { 
 

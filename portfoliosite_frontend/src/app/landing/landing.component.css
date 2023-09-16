@@ -38,6 +38,44 @@
     height: calc(100vh - 4rem);
 }
 
+/* Experience */
+#experienceSection {
+    text-align: center;
+}
+
+.experienceDiv {
+    background-color: var(--bg-accent-colour);
+
+    text-align: left;
+    padding: 1.25rem;
+    border-radius: 2rem;
+}
+
+.experienceDiv h2, .experienceDiv h3 {
+    margin-left: 1rem;
+}
+
+.expTitle {
+    color: var(--accent-colour-light);
+}
+
+.expResp {
+    font-size: 1.25rem;
+}
+
+.expDate, .expLength {
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.expDate {
+    color: var(--accent-colour-light);
+}
+
+.expLength {
+    color: var(--accent-colour);
+}
+
 /* Projects */
 
 .projectDetails {
