@@ -36,7 +36,7 @@ export const PROJECT_DATA: Project[] = [
             {path:'assets/project_contrast_5.jpg'}
         ],
         tools:'Source Engine • Hammer Editor',
-        link:'https://steamcommunity.com/sharedfiles/filedetails/?id=2466651013',
+        link:'',
         projectType:'Environment'
     },
     {

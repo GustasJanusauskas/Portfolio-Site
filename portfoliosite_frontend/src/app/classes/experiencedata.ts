@@ -7,9 +7,11 @@ export const EXPERIENCE_DATA: Experience[] = [
         company:'UAB „Higso Bozonas“',
         location:'Vilnius, Lithuania',
         responsibilities: [
-            'Developed and maintained several .NET applications using C# and WPF',
-            'Maintained and extended MS SQL Server databases with a combined >5000 stored procedures',
-            'Closely worked with clients to negotiate and implement new features'
+            'Designed new features for and maintained several .NET WPF applications',
+            'Wrote an inventorization system, integrated with SQL database',
+            'Worked with accountants to improve debt tracking system',
+            'Created prepaid invoice system, improved PDF forming feature',
+            'Maintained and optimised MS SQL Server procedures'
         ],
         date: new ExpDate(new Date(2023,6),new Date())
     }
