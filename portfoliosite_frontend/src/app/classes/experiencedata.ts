@@ -13,6 +13,6 @@ export const EXPERIENCE_DATA: Experience[] = [
             'Taught interns and new employees',
             'Maintained and optimised MS SQL Server procedures'
         ],
-        date: new ExpDate(new Date(2023,6),new Date())
+        date: new ExpDate(new Date(2023,6),new Date()) //new Date(2023,6)
     }
 ];

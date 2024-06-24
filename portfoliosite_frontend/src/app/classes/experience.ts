@@ -30,8 +30,8 @@ export class ExpDate {
             years++;
             months -= 12;
         }
-
-        return ` ${years > 0 ? years + ' years and ': ''}${months > 0 ? months + ' months': ''} `;
+ 
+        return ` ${years > 0 ? years + ' year': ''}${years > 1 ? 's': ''} ${years > 0 && months > 0 ? 'and' : ''} ${months > 0 ? months + ' month': ''}${months > 1 ? 's': ''} `;
     }
 
     getdate(input: Date): string {
