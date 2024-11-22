@@ -24,6 +24,7 @@ export const PROJECT_DATA: Project[] = [
         tools:'Angular • Bootstrap • Material • PostgreSQL',
         link:'https://github.com/GustasJanusauskas/Chatroom-Site'
     },
+    /*
     {
         id:2,
         title:'Futuristic Cityscape Environment',
@@ -53,8 +54,9 @@ export const PROJECT_DATA: Project[] = [
         link:'https://verytacticals.itch.io/volcano-spelunker',
         projectType:'Game'
     },
+    */
     {
-        id:4,
+        id:2,
         title:'Library Catalogue Web-Application',
         description:'A fictional library book catalogue, with account, borrowing and reserving functionality, as well as an in-depth search-filtering system and a dedicated admin panel.',
         images:[
@@ -66,7 +68,7 @@ export const PROJECT_DATA: Project[] = [
         link:'https://github.com/GustasJanusauskas/Book-Catalog-Service'
     },
     {
-        id:5,
+        id:3,
         title:'Portfolio Website',
         description:'A modern, responsive and easily expandable portfolio website, built using Angular and Bootstrap. Site dynamically changes personal project list, using an easily human-readable and modifiable data file.',
         images:[
