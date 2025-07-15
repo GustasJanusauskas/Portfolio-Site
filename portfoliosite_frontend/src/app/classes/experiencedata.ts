@@ -2,8 +2,19 @@ import { Experience, ExpDate } from "./experience";
 
 export const EXPERIENCE_DATA: Experience[] = [
     {
-        id:0,
-        title:'Full-Stack Software Engineer',
+        id:1,
+        title:'Software Engineer',
+        company:'UVS Group',
+        location:'Vilnius, Lithuania',
+        responsibilities: [
+            'Maintained and extended card authorization system',
+            'Modernised old database procedures, implemented ORM into functions'
+        ],
+        date: new ExpDate(new Date(2025,7),new Date())
+    },
+    {
+        id:1,
+        title:'Junior Software Engineer',
         company:'UAB „Higso Bozonas“',
         location:'Vilnius, Lithuania',
         responsibilities: [
@@ -13,6 +24,6 @@ export const EXPERIENCE_DATA: Experience[] = [
             'Taught interns and new employees',
             'Maintained and optimised MS SQL Server procedures'
         ],
-        date: new ExpDate(new Date(2023,6),new Date()) //new Date(2023,6)
+        date: new ExpDate(new Date(2023,6),new Date(2025,6)) //new Date(2023,6)
     }
 ];
