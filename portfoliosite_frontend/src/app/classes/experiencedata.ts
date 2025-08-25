@@ -7,10 +7,12 @@ export const EXPERIENCE_DATA: Experience[] = [
         company:'UVS Group',
         location:'Vilnius, Lithuania',
         responsibilities: [
-            'Maintained and extended card authorization system',
-            'Modernised old database procedures, implemented ORM into functions'
+            'Engineered and maintained Point-of-Sale (POS) solutions, focusing on reliability, extensibility, and multi-client support',
+            'Integrated modern .NET applications with legacy systems, enabling seamless interoperability and progressive modernization',
+            'Migrated legacy SQL infrastructure to Entity Framework, improving data access efficiency, maintainability, and enabling better integration with modern .NET applications',
+            'Designed and implemented scalable microservices to support business growth, improving system performance and resource efficiency under increased load'
         ],
-        date: new ExpDate(new Date(2025,7),new Date())
+        date: new ExpDate(new Date(2025,5),new Date()) //month is base-0
     },
     {
         id:1,
@@ -24,6 +26,6 @@ export const EXPERIENCE_DATA: Experience[] = [
             'Taught interns and new employees',
             'Maintained and optimised MS SQL Server procedures'
         ],
-        date: new ExpDate(new Date(2023,6),new Date(2025,6)) //new Date(2023,6)
+        date: new ExpDate(new Date(2023,6),new Date(2025,5))
     }
 ];

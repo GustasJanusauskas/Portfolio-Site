@@ -39,7 +39,7 @@ export class ExpDate {
         && input.getMonth() == new Date().getMonth()) {
             return `Present`;
         }
-
+        
         return `${input.toLocaleString('default', { month: 'long' })} ${input.getFullYear()}`;
     }
 
