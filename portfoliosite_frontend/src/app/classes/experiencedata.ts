@@ -2,7 +2,18 @@ import { Experience, ExpDate } from "./experience";
 
 export const EXPERIENCE_DATA: Experience[] = [
     {
-        id:1,
+        id:3,
+        title:'Software Engineer',
+        company:'JUDU',
+        location:'Vilnius, Lithuania',
+        responsibilities: [
+            'Developed an ultra-lightweight GPS packet ingestion system using Redpanda and Protobuf to receive and process GSM telemetry from city bus GPS modules',
+            'Developed a high-performance .NET Blazor web app for mass notification delivery with concurrent processing, fault tolerance, and duplicate-free crash recovery'
+        ],
+        date: new ExpDate(new Date(2026,2),new Date()) //month is base-0
+    },
+    {
+        id:2,
         title:'Software Engineer',
         company:'UVS Group',
         location:'Vilnius, Lithuania',
@@ -12,10 +23,10 @@ export const EXPERIENCE_DATA: Experience[] = [
             'Migrated legacy SQL infrastructure to Entity Framework, improving data access efficiency, maintainability, and enabling better integration with modern .NET applications',
             'Designed and implemented scalable microservices to support business growth, improving system performance and resource efficiency under increased load'
         ],
-        date: new ExpDate(new Date(2025,5),new Date()) //month is base-0
+        date: new ExpDate(new Date(2025,5),new Date(2026,2)) //month is base-0
     },
     {
-        id:1,
+        id:3,
         title:'Junior Software Engineer',
         company:'UAB „Higso Bozonas“',
         location:'Vilnius, Lithuania',
